@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Courses - A3School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" class="js-color-style" href="css/color-style/color-1.css">
+  <link rel="stylesheet" class="js-glass-style" href="css/glass.css" disabled>
+</head>
+
+<body>
+
+  <!-- --------------------------01.page loader start-------------------------- -->
+  <div class="page-loader js-page-loader custom-card">
+    <div class="page-loader-item"></div>
+  </div>
+  <!-- page loader end -->
+
+  <!-- --------------------------02.main wrapper start-------------------------- -->
+  <div class="main-wrapper">
+    <!-- --------------------------header start-------------------------- -->
+    <header class="header">
+      <div class="container">
+        <div class="header-main d-flex align-items-center justify-content-between">
+          <div class="header-logo">
+            <a href="index.html"><img src="img/banner-img.png" alt="banner img" id="img-logo"><span>School</span>.</a>
+          </div>
+          <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+            <span></span>
+          </button>
+          <div class="header-backdrop js-header-backdrop custom-card"></div>
+          <nav class="header-menu js-header-menu">
+            <button class="header-close-btn js-header-menu-toggler">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-link" href="index.html">home</a>
+              </li>
+              <li class="menu-item menu-item-has-children js-menu-item-has-children">
+                <a href="#" class="menu-link" data-js-toggle="sub-menu">courses <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu js-sub-menu custom-card b-radius-5 b-shadow">
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="courses.html">courses</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="course-details.html">course details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children js-menu-item-has-children">
+                <a href="#" class="menu-link" data-js-toggle="sub-menu">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu js-sub-menu custom-card b-shadow b-radius-5">
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="log-in.html">log in</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="sign-up.html">sign up</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- --------------------------header end-------------------------- -->
+
+    <!-- breadcrumb navigation start -->
+    <section class="breadcrumb-nav">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">courses</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <!-- breadcrumb navigation end -->
+
+    <!-- courses Section Start -->
+    <div class="courses-section sec-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="section-title text-center mb-4">
+              <h2 class="main-title">our courses</h2>
+              <p class="sub-title">Get right course for you</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- nav tabs -->
+            <div class="nav courses-tab border-0 mb-4 nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="web-development-tab" data-bs-toggle="tab"
+                data-bs-target="#web-development" type="button" role="tab" aria-controls="web-development"
+                aria-selected="true">Web development</button>
+              <button class="nav-link" id="health-tab" data-bs-toggle="tab" data-bs-target="#health" type="button"
+                role="tab" aria-controls="health-tab" aria-selected="false">Database Technologies</button>
+              <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music" type="button"
+                role="tab" aria-controls="music" aria-selected="false">Backend Technologies</button>
+            </div>
+            <!-- tab panes -->
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="web-development" role="tabpanel"
+                aria-labelledby="web-development-tab">
+                <div class="row justify-content-center">
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-img-container">
+                          <img src="img/courses/web-development/1.png" alt="course-item-img">
+                        </div>
+                        <h3 class="course-item-title">html for beginners</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/1.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price"><i class="fas fa-rupee-sign"></i> 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/web-development/2.png" alt="course-item-thumb">
+                        </div>
+                        <h3 class="course-item-title">css for beginners</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/2.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price"><i class="fas fa-rupee-sign"></i>49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/web-development/3.jpg" alt="course-item-thumb">
+                        </div>
+                        <h3 class="course-item-title">JS for beginners</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/3.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price"><i class="fas fa-rupee-sign"></i> 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/web-development/4.png" alt="course-item-thumb">
+                        </div>
+                        <h3 class="course-item-title">React for beginners</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/4.jpg"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Akshay Belkhode</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price"><i class="fas fa-rupee-sign"></i> 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="health-tab">
+                <div class="row justify-content-center">
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/Database-Technologies/Oracle1.png" alt="course-item-thumb" style="height: 140px;">
+                        </div>
+                        <h3 class="course-item-title">Oracle</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/1.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price"><i class="fas fa-rupee-sign"></i> 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/Database-Technologies/MySQL2.png" alt="course-item-thumb">
+                        </div>
+                        <h3 class="course-item-title">MySQL</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/2.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price"><i class="fas fa-rupee-sign"></i> 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+                <div class="row justify-content-center">
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/Backend-Technologies/Java1.png" alt="course-item-thumb">
+                        </div>
+                        <h3 class="course-item-title">Java</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/1.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price">$ 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                  <!-- course item start -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="course-item">
+                      <a class="course-item-view-link" href="course-details.html">
+                        <div class="course-item-thumb course-item-img-container">
+                          <img src="img/courses/Backend-Technologies/Python2.png" alt="course-item-thumb">
+                        </div>
+                        <h3 class="course-item-title">Python</h3>
+                        <div class="course-item-instructor">
+                          <img class="course-item-instructor-img" src="img/instructor/2.gif"
+                            alt="course item instructor img">
+                          <span class="course-item-instructor-name">Panda</span>
+                        </div>
+                        <div class="course-item-info">
+                          <div class="course-item-rating">
+                            <span class="course-item-average-rating">(5)</span>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <i class="fas fa-star course-item-star"></i>
+                            <span class="course-item-total-rating">(230)</span>
+                          </div>
+                          <div class="course-item-price">$ 49</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- course item end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    <!-- courses Section End -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links">
+                <h3 class="footer-links-title footer-links-logo"><span>A3</span>School</h3>
+                <ul class="footer-links-list">
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">about</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">what we offer</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">certificates</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links">
+                <h3 class="footer-links-title">learning</h3>
+                <ul class="footer-links-list">
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">get the app</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">FAQ Sessions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links footer-item">
+                <h3 class="footer-links-title">more</h3>
+                <ul class="footer-links-list">
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">become a course creater</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">Placement webinars</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">free personality development</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">help and support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links footer-item">
+                <h3 class="footer-links-title">get in touch</h3>
+                <ul>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-facebook-f"></i> facebook
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-twitter"></i> twitter
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-youtube"></i> youtube
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-linkedin-in"></i> linkedin
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-whatsapp"></i>What's App
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="m-0 py-4 text-center">Copyright &copy;2021 <a href="http://akshaybelkhode.com/">Akshay Belkhode<a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!-- main wrapper end -->
+
+  <!-- theme customizer start -->
+  <div class="theme-customizer js-theme-customizer custom-card b-shadow">
+    <div class="theme-customizer-toggler js-theme-customizer-toggler">
+      <i class="fas fa-cog"></i>
+    </div>
+    <h3 class="theme-customizer-title">theme customizer</h3>
+    <div class="theme-customizer-item">
+      <!-- theme colors -->
+      <p class="mb-2">Theme Colors</p>
+      <div class="theme-colors js-theme-colors">
+        <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1">
+        </button>
+        <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2">
+        </button>
+        <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3">
+        </button>
+        <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4">
+        </button>
+        <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5">
+        </button>
+      </div>
+    </div>
+    <div class="theme-customizer-item">
+      <div class="form-check form-switch">
+        <input class="form-check-input js-dark-mode" type="checkbox" id="dark-mode">
+        <label class="form-check-label" for="dark-mode">
+          Dark Mode
+        </label>
+      </div>
+    </div>
+    <div class="theme-customizer-item">
+      <div class="form-check form-switch">
+        <input class="form-check-input js-glass-effect" type="checkbox" id="glass-effect">
+        <label class="form-check-label" for="glass-effect">
+          Glass Effect
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- theme customizer end -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"> </script>
+</body>
+
+</html>

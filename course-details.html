@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Course details - A3School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" class="js-color-style" href="css/color-style/color-1.css">
+  <link rel="stylesheet" class="js-glass-style" href="css/glass.css" disabled>
+</head>
+<body>
+
+
+  <!-- --------------------------01.page loader start-------------------------- -->
+  <div class="page-loader js-page-loader custom-card">
+    <div class="page-loader-item"></div>
+  </div>
+  <!-- page loader end -->
+
+  <!-- --------------------------02.main wrapper start-------------------------- -->
+  <div class="main-wrapper">
+    <!-- --------------------------header start-------------------------- -->
+    <header class="header">
+      <div class="container">
+        <div class="header-main d-flex align-items-center justify-content-between">
+          <div class="header-logo">
+            <a href="index.html"><img src="img/banner-img.png" alt="banner img" id="img-logo"><span>School</span>.</a>
+          </div>
+          <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+            <span></span>
+          </button>
+          <div class="header-backdrop js-header-backdrop custom-card"></div>
+          <nav class="header-menu js-header-menu">
+            <button class="header-close-btn js-header-menu-toggler">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-link" href="index.html">home</a>
+              </li>
+              <li class="menu-item menu-item-has-children js-menu-item-has-children">
+                <a href="#" class="menu-link" data-js-toggle="sub-menu">courses <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu js-sub-menu custom-card b-radius-5 b-shadow">
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="courses.html">courses</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="course-details.html">course details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children js-menu-item-has-children">
+                <a href="#" class="menu-link" data-js-toggle="sub-menu">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="sub-menu js-sub-menu custom-card b-shadow b-radius-5">
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="log-in.html">log in</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-link" href="sign-up.html">sign up</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="contact.html">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- --------------------------header end-------------------------- -->
+
+    <!-- breadcrumb navigation start -->
+    <section class="breadcrumb-nav">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">course details</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <!-- breadcrumb navigation end -->
+
+    <!-- course details section start -->
+    <section class="course-details sec-padding">
+      <div class="container">
+        <div class="course-details-main position-relative">
+          <!-- course details sidebar start -->
+          <aside class="course-sidebar custom-card b-radius-5 b-shadow pad-30">
+            <div class="course-sidebar-thumbnail position-relative" data-bs-toggle="modal"
+              data-bs-target="#course-preview-modal">
+              <img src="img/courses/web-development/3.jpg" class="w-100" alt="course preview thumb">
+              <i class="fas fa-play"></i>
+              <p class="course-sidebar-thumbnail-heading text-center">Course Preview</p>
+            </div>
+            <div class="course-sidebar-price d-flex align-items-center mb-3">
+              <span class="course-sidebar-price-new"><i class="fas fa-rupee-sign"></i>49</span>
+           
+              <span class="course-sidbar-price-old text-decoration-line-through"><i class="fas fa-rupee-sign"></i>100</span>
+              <span class="course-sidebar-price-discount">51% Off</span>
+            </div>
+            <h3 class="course-sidebar-heading mb-3 text-capitalize">Course Features:</h3>
+            <ul class="course-sidebar-list">
+              <li>Total 30 lessons</li>
+              <li>Life time access</li>
+              <li>Access on mobile and TV</li>
+              <li>Certificate of completetion</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-theme">enroll now</a>
+          </aside>
+          <!-- course details sidebar end -->
+
+          <div class="course-header custom-card b-radius-5 b-shadow pad-30">
+            <h2 class="course-header-heading">Javascript For Absolute Beginners</h2>
+            <div class="course-header-rating">
+              <span class="course-header-average-rating">4.5</span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="course-header-total-rating">(125 Ratings)</span>
+            </div>
+            <ul class="course-header-list">
+              <li>Enrolled Students - <span>22000</span></li>
+              <li>Created by - <span><a href="#">john doe</a></span></li>
+              <li>last updated - <span>10/10/2021</span></li>
+              <li>language - <span>English</span></li>
+            </ul>
+          </div>
+          <!-- course curriculum start -->
+          <div class="course-curriculum custom-card b-radius-5 b-shadow pad-30 mt-4">
+            <h3 class="mb-4 course-curriculum-heading text-capitalize">course content</h3>
+            <div class="accordion" id="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1"
+                    aria-expanded="true" aria-controls="collapse-1">
+                    Language Basics <span>2 lessons | 20min</span>
+                  </button>
+                </h2>
+                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Lexical Structure
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Values
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Types
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Variables
+                        <span>06:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                    Types <span>2 lessons | 20min</span>
+                  </button>
+                </h2>
+                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Strings
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Booleans
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Null and undefined
+                        <span>06:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                    Control Structure <span>2 lessons | 20min</span>
+                  </button>
+                </h2>
+                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        If / Else
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Switch
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Loops
+                        <span>06:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                    Functions <span>2 lessons | 20min</span>
+                  </button>
+                </h2>
+                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Arrow Function
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Parameters
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Return Value
+                        <span>06:00</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-play-circle"></i>
+                        Recursion
+                        <span>06:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course curriculum end -->
+
+          <!-- course description start -->
+          <div class="course-description custom-card b-radius-5 b-shadow pad-30 mt-4">
+            <h3 class="mb-4 course-description-heading text-capitalize">Description</h3>
+            <p>Akshay akskahy aksasg ghasvfhjv
+              Akshay aksahy kashay
+              praesentium, vitae cum ut quia quibusdam accusamus eligendi soluta aspernatur iure quos itaque ipsa at
+              fuga amet? Perspiciatis soluta quis eos optio ad hic ratione quod mollitia placeat, delectus nam? Nulla,
+              dolores maxime similique quasi dignissimos id adipisci aut?</p>
+            <h4 class="course-description-headline">For who is this course designed ?</h4>
+            <p>Akshay akskahy aksasg ghasvfhjv
+              Akshay aksahy kashay
+              praesentium, vitae cum ut quia quibusdam accusamus eligendi soluta aspernatur iure quos itaque ipsa at
+              fuga amet? Perspiciatis soluta quis eos optio ad hic ratione quod mollitia placeat, delectus nam? Nulla,
+              dolores maxime similique quasi dignissimos id adipisci aut?</p>
+            <h4 class="course-description-headline">Why should you take this course ?</h4>
+            <p>Akshay akskahy aksasg ghasvfhjv
+              Akshay aksahy kashay
+              praesentium, vitae cum ut quia quibusdam accusamus eligendi soluta aspernatur iure quos itaque ipsa at
+              fuga amet? Perspiciatis soluta quis eos optio ad hic ratione quod mollitia placeat, delectus nam? Nulla,
+              dolores maxime similique quasi dignissimos id adipisci aut?</p>
+          </div>
+          <!-- course end end -->
+
+          <!-- course instructor start -->
+          <div class="course-instructor custom-card b-radius-5 b-shadow pad-30 mt-4">
+            <h3 class="mb-4 course-instructor-heading text-capitalize">Instructor</h3>
+            <div class="course-instructor-info d-flex flex-wrap align-items-center">
+              <div class="left me-4">
+                <img src="img/instructor/1.gif" class="course-instructor-img rounded-circle"
+                  alt="course instructor img">
+              </div>
+              <div class="right">
+                <h4 class="course-instructor-name">Samadhan Manore<span class="course-instructor-designation">(web
+                    developer)</span></h4>
+                <ul class="course-instructor-list">
+                  <li><i class="fas fa-star"></i> 4.5 Rating</li>
+                  <li><i class="fas fa-play-circle"></i> 10 Courses</li>
+                  <li><i class="fas fa-certificate"></i> 3000 Reviews</li>
+                  <li><i class="fas fa-user"></i> 5000 Students</li>
+                </ul>
+              </div>
+            </div>
+            <p class="mt-3 mb-0 course-instructor-desc">Akshay akskahy aksasg ghasvfhjv
+              Akshay aksahy kashay
+              praesentium, vitae cum ut quia quibusdam accusamus eligendi soluta aspernatur iure quos itaque ipsa at
+              fuga amet? Perspiciatis soluta quis eos optio ad hic ratione quod mollitia placeat, delectus nam? Nulla,
+              dolores maxime similique quasi dignissimos id adipisci aut?</p>
+          </div>
+          <!-- course instructor end -->
+
+         
+        </div>
+      </div>
+    </section>
+    <!-- course details section end -->
+
+    <!-- course preview video - Modal Start -->
+    <div class="modal fade course-preview-modal js-course-preview-modal" id="course-preview-modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="ratio ratio-16x9">
+              <video class="js-course-preview-video" controls>
+                <source src="video/course-preview.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course preview video - Modal End -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links">
+                <h3 class="footer-links-title footer-links-logo"><span>A3</span>School</h3>
+                <ul class="footer-links-list">
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">about</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">what we offer</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">certificates</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links">
+                <h3 class="footer-links-title">learning</h3>
+                <ul class="footer-links-list">
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">get the app</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">testimonials</a>
+                  </li>
+                  
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">FAQ Sessions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links footer-item">
+                <h3 class="footer-links-title">more</h3>
+                <ul class="footer-links-list">
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">become a course creater</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">Placement webinars</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">free personality development</a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">help and support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-links footer-item">
+                <h3 class="footer-links-title">get in touch</h3>
+                <ul>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-facebook-f"></i> facebook
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-twitter"></i> twitter
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-youtube"></i> youtube
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-linkedin-in"></i> linkedin
+                    </a>
+                  </li>
+                  <li class="footer-links-item">
+                    <a href="#" class="footer-links-link">
+                      <i class="fab fa-whatsapp"></i>What's App
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="m-0 py-4 text-center">Copyright &copy;2021 <a href="http://akshaybelkhode.com/">Akshay Belkhode<a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!-- main wrapper end -->
+
+  <!-- theme customizer start -->
+  <div class="theme-customizer js-theme-customizer custom-card b-shadow">
+    <div class="theme-customizer-toggler js-theme-customizer-toggler">
+      <i class="fas fa-cog"></i>
+    </div>
+    <h3 class="theme-customizer-title">theme customizer</h3>
+    <div class="theme-customizer-item">
+      <!-- theme colors -->
+      <p class="mb-2">Theme Colors</p>
+      <div class="theme-colors js-theme-colors">
+        <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1">
+        </button>
+        <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2">
+        </button>
+        <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3">
+        </button>
+        <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4">
+        </button>
+        <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5">
+        </button>
+      </div>
+    </div>
+    <div class="theme-customizer-item">
+      <div class="form-check form-switch">
+        <input class="form-check-input js-dark-mode" type="checkbox" id="dark-mode">
+        <label class="form-check-label" for="dark-mode">
+          Dark Mode
+        </label>
+      </div>
+    </div>
+    <div class="theme-customizer-item">
+      <div class="form-check form-switch">
+        <input class="form-check-input js-glass-effect" type="checkbox" id="glass-effect">
+        <label class="form-check-label" for="glass-effect">
+          Glass Effect
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- theme customizer end -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"> </script>
+</body>
+
+</html>

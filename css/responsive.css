@@ -1,0 +1,168 @@
+
+/* Responsive */    
+@media(max-width:1199px){
+    .container{
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+@media(max-width:991px){
+   .header{
+       padding: 12px 0;
+   }
+   .header-menu{
+    position: fixed;
+    visibility: hidden;
+    width: 300px;
+    height: 100vh;
+    top:0;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 70px 0 50px;
+    right: -300px;
+    transition: all 0.5s ease;
+    background-color: var(--custom-bg-color);
+    box-shadow: var(--box-shadow);
+}
+.header-menu.open{
+    visibility: visible;
+    right: 0;
+}
+.header .menu-item{
+    display: block;
+    margin:0;
+}
+.header .menu-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+.header .menu-item:first-child > .menu-link{
+    border-top: 1px solid  var(--border-color);	
+}
+.header .menu-item-has-children.active > .menu-link i{
+    transform: rotate(-90deg);
+}
+.header .sub-menu{
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: translateY(0px);
+    top:auto;
+    max-height: 0;
+    overflow: hidden;
+    padding:0;
+    border-radius: 0;
+}
+.header .sub-menu-link{
+    padding: 12px 45px;
+    border-bottom: 1px solid var(--border-color);
+}
+.header-close-btn,
+.header-hamburger-btn{
+    display: block;
+}
+   .circular-img{
+       max-width: 300px;
+   }
+   .circular-img img{
+       max-width: 260px;
+   }
+   .circular-img-circle{
+       width: 300px;
+       height: 300px;
+   }
+   .banner-text-heading{
+       font-size: 35px;
+   }
+   .course-sidebar{
+       position: relative;
+       width: 100%;
+       margin-top: 24px;
+   }
+   .course-details-main {
+       padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .course-header{
+        order:-1;
+    }
+    .course-instructor-img{
+        width: 100px;
+    }
+    .section-title .sub-title{
+        font-size: 30px;
+    }
+}
+@media(max-width:767px){
+    .container{
+        padding: 0 15px;
+    }
+    .bai-box{
+        text-align: center;
+    }
+    .banner-text-heading{
+        font-size: 24px;
+    }
+    .form-heading,
+    .section-title .sub-title{
+        font-size: 22px;
+    }
+    .pad-30{
+        padding:20px 15px;
+    }
+    .reviews-detail-summary{
+        margin-bottom: 15px;
+    }
+    .course-curriculum .accordion-button span {
+        position: relative;
+        right: auto;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    .course-curriculum .accordion-button{
+        padding-right: 15px;
+    }
+    .course-curriculum ul li span {
+        font-size: 12px;
+        position: relative;
+        display: block;
+        margin-top: 5px;
+    }
+    .course-header-heading{
+        font-size: 24px;
+    }
+    .section-title .main-title,
+    .banner-text-sub-heading,
+    h3{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:575px){
+    .circular-img{
+        max-width: 230px;
+    }
+    .circular-img img{
+        max-width: 200px;
+    }
+    .circular-img-circle{
+        width: 230px;
+        height: 230px;
+    }    
+    .footer-links{
+        text-align:center;
+    }
+    .header-logo a{
+        font-size: 22px;
+    }
+    .modal-dialog{
+        margin:8px 15px;
+    }
+}
